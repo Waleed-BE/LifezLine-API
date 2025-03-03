@@ -1,0 +1,268 @@
+[
+  {
+    "ContainingType": "CleanCQRS.Api.Controllers.AppointmentController",
+    "Method": "AddAppointment",
+    "RelativePath": "api/Appointment/Add-Appointment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "availabilityId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "patientId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "appointmentDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "startTime",
+        "Type": "System.Nullable\u00601[[System.TimeSpan, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "endTime",
+        "Type": "System.Nullable\u00601[[System.TimeSpan, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "mediaFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CleanCQRS.Api.Controllers.AppointmentController",
+    "Method": "GetAppointmentByDoctorId",
+    "RelativePath": "api/Appointment/Get-Appointment-By-Doctor-Id",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "DoctorId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CleanCQRS.Api.Controllers.AppointmentController",
+    "Method": "GetAppointmentByPatientId",
+    "RelativePath": "api/Appointment/Get-Appointment-By-Patient-Id",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PatientId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CleanCQRS.Api.Controllers.DoctorController",
+    "Method": "AddDoctor",
+    "RelativePath": "api/Doctor/Add-Edit-Doctor",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "doctorDto",
+        "Type": "CleanCQRS.Core.Dtos.Doctor.AddDoctorDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CleanCQRS.Api.Controllers.DoctorController",
+    "Method": "AddDoctorSchedule",
+    "RelativePath": "api/Doctor/Add-Schedule",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "doctorAvailabilityDTOList",
+        "Type": "System.Collections.Generic.List\u00601[[CleanCQRS.Core.Dtos.Doctor.DoctorAvailabilityDTO, CleanCQRS.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CleanCQRS.Core.Dtos.Doctor.DoctorAvailabilityResponseDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CleanCQRS.Api.Controllers.DoctorController",
+    "Method": "ExpertPanel",
+    "RelativePath": "api/Doctor/Expert-Panel",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CleanCQRS.Core.Dtos.DoctorService.DoctorWithServicesDTO, CleanCQRS.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CleanCQRS.Api.Controllers.DoctorController",
+    "Method": "GetAllDoctorScheduleByDate",
+    "RelativePath": "api/Doctor/Get-all-Doctors-Schedule-By-Date-Range",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "startDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "endDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CleanCQRS.Core.Dtos.Doctor.DoctorAvailabilityDTO, CleanCQRS.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CleanCQRS.Api.Controllers.DoctorController",
+    "Method": "GetDoctorScheduleById",
+    "RelativePath": "api/Doctor/Get-Doctor-Schedule-By-Id",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "DoctorId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CleanCQRS.Core.Dtos.Doctor.DoctorAvailabilityDTO, CleanCQRS.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CleanCQRS.Api.Controllers.OTPController",
+    "Method": "VerifyOtp",
+    "RelativePath": "api/OTP/Verify-Otp",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "verifyOtpDto",
+        "Type": "CleanCQRS.Core.Dtos.OTP.VerifyOtpDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CleanCQRS.Api.Controllers.PatientController",
+    "Method": "AddEditPatient",
+    "RelativePath": "api/Patient/Add-Edit-Patient",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "patientDto",
+        "Type": "CleanCQRS.Core.Dtos.Patient.AddPatientDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CleanCQRS.Api.Controllers.ServicesController",
+    "Method": "AddEditProvidedServices",
+    "RelativePath": "api/Services/Add-Edit-Service",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "serviceDTO",
+        "Type": "CleanCQRS.Core.Dtos.Services.ServiceDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CleanCQRS.Api.Controllers.ServicesController",
+    "Method": "GetAllProvidedServices",
+    "RelativePath": "api/Services/Get-All-Provided-Services",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CleanCQRS.Api.Controllers.VerifierController",
+    "Method": "ApproveAppointmentReceipt",
+    "RelativePath": "api/Verifier/Approve-Appointment-Receipt",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "AppointmentId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

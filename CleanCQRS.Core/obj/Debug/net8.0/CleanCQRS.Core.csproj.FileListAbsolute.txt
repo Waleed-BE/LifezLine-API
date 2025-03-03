@@ -1,0 +1,12 @@
+E:\LifezLine\CleanCQRS.Api-master\CleanCQRS.Core\bin\Debug\net8.0\CleanCQRS.Core.deps.json
+E:\LifezLine\CleanCQRS.Api-master\CleanCQRS.Core\bin\Debug\net8.0\CleanCQRS.Core.dll
+E:\LifezLine\CleanCQRS.Api-master\CleanCQRS.Core\bin\Debug\net8.0\CleanCQRS.Core.pdb
+E:\LifezLine\CleanCQRS.Api-master\CleanCQRS.Core\obj\Debug\net8.0\CleanCQRS.Core.csproj.AssemblyReference.cache
+E:\LifezLine\CleanCQRS.Api-master\CleanCQRS.Core\obj\Debug\net8.0\CleanCQRS.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\LifezLine\CleanCQRS.Api-master\CleanCQRS.Core\obj\Debug\net8.0\CleanCQRS.Core.AssemblyInfoInputs.cache
+E:\LifezLine\CleanCQRS.Api-master\CleanCQRS.Core\obj\Debug\net8.0\CleanCQRS.Core.AssemblyInfo.cs
+E:\LifezLine\CleanCQRS.Api-master\CleanCQRS.Core\obj\Debug\net8.0\CleanCQRS.Core.csproj.CoreCompileInputs.cache
+E:\LifezLine\CleanCQRS.Api-master\CleanCQRS.Core\obj\Debug\net8.0\CleanCQRS.Core.dll
+E:\LifezLine\CleanCQRS.Api-master\CleanCQRS.Core\obj\Debug\net8.0\refint\CleanCQRS.Core.dll
+E:\LifezLine\CleanCQRS.Api-master\CleanCQRS.Core\obj\Debug\net8.0\CleanCQRS.Core.pdb
+E:\LifezLine\CleanCQRS.Api-master\CleanCQRS.Core\obj\Debug\net8.0\ref\CleanCQRS.Core.dll

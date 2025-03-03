@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "DsTuJaoLGdh5i2xysQ5CEj+9q5wHZH4JrPPT4jtOHvA=",
+  "Source": "CleanCQRS.Api",
+  "BasePath": "_content/CleanCQRS.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

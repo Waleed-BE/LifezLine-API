@@ -1,0 +1,2 @@
+﻿//#OPTIONSPATTERN 2
+Microsoft.Extensions.Options.Configuration.Extensions
